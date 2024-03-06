@@ -13,4 +13,4 @@
 *************************/
 
 void FreamControl_Intialize(void);
-void FreamControl_Vpdate(void);
+void FreamControl_Update(void);

@@ -13,9 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="sound">
+      <UniqueIdentifier>{91783d95-e981-45e1-9f4c-9f072028ab8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image">
+      <UniqueIdentifier>{fbea7452-00ea-44c5-832a-9e0354ebb048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dat">
+      <UniqueIdentifier>{94456c1b-ba37-48d1-835c-d17504d64b60}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Tetris.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Ranking.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="AppMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="EndScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="FreamControl.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMainScene.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -23,7 +53,7 @@
     <ClInclude Include="Block.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="End Scene.h">
+    <ClInclude Include="EndScene.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="FreamControl.h">
@@ -32,8 +62,107 @@
     <ClInclude Include="GameMainScene.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="InputConttrol.h">
+    <ClInclude Include="InputControl.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="RankingScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxLib.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE6.mp3">
+      <Filter>sound</Filter>
+    </Media>
+    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\b_062.mp3">
+      <Filter>sound</Filter>
+    </Media>
+    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\Clear.mp3">
+      <Filter>sound</Filter>
+    </Media>
+    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\GameOver.mp3">
+      <Filter>sound</Filter>
+    </Media>
+    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE1.mp3">
+      <Filter>sound</Filter>
+    </Media>
+    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE2.mp3">
+      <Filter>sound</Filter>
+    </Media>
+    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE3.mp3">
+      <Filter>sound</Filter>
+    </Media>
+    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE4.mp3">
+      <Filter>sound</Filter>
+    </Media>
+    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE5.wav">
+      <Filter>sound</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\BGM009.ogg">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\BGM017.ogg">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\BGM018.ogg">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\BGM041.ogg">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="..\..\..\..\Users\sunag\Downloads\dat-20240306T171053Z-001\dat\rankingdata.csv">
+      <Filter>dat</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\block.png">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\block.bmp">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\bom.bmp">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\bom.png">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\Clear.bmp">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\end.bmp">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\GameOver.bmp">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\Lv.bmp">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\number.bmp">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\ranking.bmp">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\stage.bmp">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\stage.png">
+      <Filter>image</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\title.bmp">
+      <Filter>image</Filter>
+    </Image>
   </ItemGroup>
 </Project>

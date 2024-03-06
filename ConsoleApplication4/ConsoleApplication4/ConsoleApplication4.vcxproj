@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{cbdc313d-9757-4e93-9ca1-b8f3be5c9280}</ProjectGuid>
-    <RootNamespace>Tetris</RootNamespace>
+    <ProjectGuid>{5e285e4e-2a9a-43d0-9ae0-5c64303615e8}</ProjectGuid>
+    <RootNamespace>ConsoleApplication4</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,58 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AppMain.cpp" />
-    <ClCompile Include="EndScene.cpp" />
-    <ClCompile Include="FreamControl.cpp" />
-    <ClCompile Include="GameMainScene.cpp" />
-    <ClCompile Include="Ranking.cpp" />
-    <ClCompile Include="SceneManager.cpp" />
-    <ClCompile Include="Tetris.cpp" />
-    <ClCompile Include="TitleScene.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Block.h" />
-    <ClInclude Include="DxLib.h" />
-    <ClInclude Include="EndScene.h" />
-    <ClInclude Include="FreamControl.h" />
-    <ClInclude Include="GameMainScene.h" />
-    <ClInclude Include="InputControl.h" />
-    <ClInclude Include="RankingScene.h" />
-    <ClInclude Include="SceneManager.h" />
-    <ClInclude Include="TitleScene.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\b_062.mp3" />
-    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\Clear.mp3" />
-    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\GameOver.mp3" />
-    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE1.mp3" />
-    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE2.mp3" />
-    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE3.mp3" />
-    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE4.mp3" />
-    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE5.wav" />
-    <Media Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\SE6.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\..\..\Users\sunag\Downloads\dat-20240306T171053Z-001\dat\rankingdata.csv" />
-    <None Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\BGM009.ogg" />
-    <None Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\BGM017.ogg" />
-    <None Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\BGM018.ogg" />
-    <None Include="..\..\..\..\Users\sunag\Downloads\sounds-20240306T171047Z-001\sounds\BGM041.ogg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\block.bmp" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\block.png" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\bom.bmp" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\bom.png" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\Clear.bmp" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\end.bmp" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\GameOver.bmp" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\Lv.bmp" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\number.bmp" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\ranking.bmp" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\stage.bmp" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\stage.png" />
-    <Image Include="..\..\..\..\Users\sunag\Downloads\images-20240306T171139Z-001\images\title.bmp" />
+    <ClCompile Include="ConsoleApplication4.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
