@@ -128,12 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AppMain.cpp" />
+    <ClCompile Include="Block.cpp" />
     <ClCompile Include="EndScene.cpp" />
     <ClCompile Include="FreamControl.cpp" />
     <ClCompile Include="GameMainScene.cpp" />
+    <ClCompile Include="InputControl.cpp" />
     <ClCompile Include="Ranking.cpp" />
     <ClCompile Include="SceneManager.cpp" />
-    <ClCompile Include="Tetris.cpp" />
     <ClCompile Include="TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
