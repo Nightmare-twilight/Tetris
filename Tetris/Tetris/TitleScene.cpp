@@ -64,7 +64,7 @@ int  TitleScene_Initialize(void)
 *ˆø”F‚È‚µ
 *–ß‚è’lF‚È‚µ
 *********************/
-void TitkeScene_Update(void)
+void TitleScene_Update(void)
 {
 	//BGM‚ª—¬‚ê‚Ä‚È‚¢‚ÉÄ¶
 	if (CheckSoundMem(sounds[E_TITLE_BGM]) != TRUE)

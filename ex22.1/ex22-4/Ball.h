@@ -5,7 +5,7 @@ private:
 	float x;
 	float y;
 
-	public;
+public:
 
 	Ball();
 	Ball(float mx, float my);

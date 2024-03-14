@@ -196,7 +196,7 @@ void Block_Update(void)
 	if ((GetButtonDown(XINPUT_BUTTON_A) == TRUE) ||
 		(GetButtonDown(XINPUT_BUTTON_Y) == TRUE))
 	{
-		turn_block(TURN_ANTICROCKWICE);
+		trun_block(TURN_ANTICROCKWICE);
 	}
 
 	//ブロックの回転(時計回り）
@@ -204,7 +204,7 @@ void Block_Update(void)
 	if ((GetButtonDown(XINPUT_BUTTON_B) == TRUE) ||
 		(GetButtonDown(XINPUT_BUTTON_X) == TRUE))
 	{
-		turn_block(TURN_CROCKWICE);
+		trun_block(TURN_CROCKWICE);
 	}
 
 	//落下処理
@@ -305,21 +305,23 @@ void create_field(void)
 {
 	int i, j;
 	//フィールドの生成
-	for (i = 0; j < FIELD_WIDTH; j++)
+	for (i = 0; i < FIELD_HEIGHT; i++)
 	{
-		//フィールド値の設定
-		if (j == 0 || j == FIELD_WIDTH -1 || i == FIELD_HEIGHT -1)
+		for (j = 0; j < FIELD_WIDTH; j++)
+		{
+			//フィールド値の設定
+			if (j == 0 || j == FIELD_WIDTH - 1 || i == FIELD_HEIGHT - 1)
 
-		{
-			Field[i][j] = E_BLOCK_WALL;  
-		}
-		else
-		{
-			Field[i][j] = E_BLOCK_EMPTY;
+			{
+				Field[i][j] = E_BLOCK_WALL;
+			}
+			else
+			{
+				Field[i][j] = E_BLOCK_EMPTY;
+			}
 		}
 	}
 }
-
 /*****************************
 *ブロック機能：ブロック生成処理
 ＊引数；なし
@@ -407,7 +409,7 @@ void change_block(void)
 	{
 		for (i=0; i< BLOCK_TROUT_SIZE; i++)
 		{ 
-			for (i = 0; j < BLOCK_TROUT_SIZE; j++)
+			for (j = 0; j < BLOCK_TROUT_SIZE; j++)
 			{
 				temp[i][j] = DropBlock[i][j];
 				DropBlock[i][j] = Stock[i][j];
@@ -431,7 +433,7 @@ void change_block(void)
 	}
 }
 
-void turn_block(int clockwise)
+void  trun_block(int clockwise)
 {
 	BLOCK_STATE temp[BLOCK_TROUT_SIZE][BLOCK_TROUT_SIZE] = { E_BLOCK_EMPTY };
 	int i, j;

@@ -1,6 +1,6 @@
 #pragma once
 
-class Ball
+class Bar
 {
 private:
 	float x;
@@ -9,10 +9,9 @@ private:
 public:
 	Bar();
 	~Bar();
-
 	void Update();
 	void Draw();
 
-	void SetLocstion(float mx, float my);
+	void SetLocation(float mx, float my);
 
 };

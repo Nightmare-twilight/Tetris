@@ -11,7 +11,7 @@ void KeyBoardControl::Update()
 		old_key[i] = now_key[i];
 	}
 
-	GetHitKeyStateAII(now_key);
+	GetHitKeyStateAll(now_key);
 }
 bool KeyBoardControl::GetKeyDown(int key_code)
 {
@@ -24,11 +24,11 @@ bool KeyBoardControl::GetKeyDown(int key_code)
 	}
 	return false;
 }
-bool KeyBoardControl::GetKeyUp(int Key_code)
+bool KeyBoardControl::GetKeyUp(int key_code)
 {
 	if (CheckKeyCodeRange(key_code))
 	{
-		if (now_key[key_code ] == FALSE && old_key[key_code]==TRUE)
+		if (now_key[key_code] == FALSE && old_key[key_code]==TRUE)
 		{
 			return true;
 	}

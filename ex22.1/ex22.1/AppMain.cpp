@@ -25,7 +25,7 @@ while (ProcessMessage() != -1)
 
 	ball.Draw();
 
-	screenFlip();
+	ScreenFlip();
 
  }
 
